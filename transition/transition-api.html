@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.transition_box {
+				height: 100px;
+				width: 160px;
+				border: 1px solid gold;
+				font-size: 12px;
+				line-height: 100px;
+				text-align: center;
+				cursor: pointer;
+				/*transition属性*/
+				-webkit-transition-property: width;
+				-webkit-transition-duration: 1s;
+				-webkit-transition-timing-function: linear;
+				-webkit-transition-delay: 0.2s;
+				/*简写形式*/
+				/*-webkit-transition:width 1s linear 0.2s;*/
+			}
+			
+			.transition_box:hover {
+				width: 320px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="transition" class="transition_box">
+			鼠标放上来，有惊喜哦！
+		</div>
+	</body>
+	<script type="text/javascript">
+		transition.addEventListener("transitionend", myFunction);
+
+		function myFunction(e) {
+			e = e || event;
+			transition.innerHTML = 'propertyName:' + e.propertyName + '; elapsedTime:' + e.elapsedTime + '; pseudoElement:' + e.pseudoElement;
+		}
+	</script>
+
+</html>
