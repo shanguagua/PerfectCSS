@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+			}
+			
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				vertical-align: center;
+				flex-wrap: wrap;
+				align-content: center;
+				font-family: 'Open Sans', sans-serif;
+				background: linear-gradient(top, #222, #333);
+			}
+			
+			.main-content{
+				width: 250px;
+			    background-color: aquamarine;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    margin: 10px;
+			}
+			
+			[class$='container'] {
+				background-color: #fad85e;
+				width: 120px;
+				height: 120px;
+				object-fit: contain;
+				box-shadow: inset 0 5px #e7f2a9, inset 0 -5px #fae9ae, inset 5px 0 #f8edc6, inset -5px 0 #fae9ae;
+				border-radius: 10%;
+			}			
+			.item {
+				display: block;
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				margin: 4px;
+				background-color: #d7f246;
+				box-shadow: inset 0 3px #a2935d, inset 0 -3px #998332;
+			}
+			.code{
+				    background-color: #b2f4f4;
+				    width: 100%;
+				    height: 90px;
+				    color: #0a1612;
+			}
+			/**第一个盒子**/
+			.first-container {
+				display: flex;
+				justify-content: space-between;
+			}
+			.first-container .item:nth-child(2){
+				align-self: center;
+			}
+			.first-container .item:nth-child(3){
+				align-self: flex-end;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--第一个盒子-->
+		<div class="main-content">
+			<div class="code" style="height: 220px;">
+				.first-container {<br>
+					display: flex;<br>
+					justify-content: space-between;<br>
+				}<br>
+				.first-container .item:nth-child(2){<br>
+					align-self: center;<br>
+				}<br>
+				.first-container .item:nth-child(3){<br>
+					align-self: flex-end;<br>
+				}
+			</div>
+			<div class="first-container">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+		</div>
+	</body>
+
+</html>

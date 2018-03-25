@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+			}
+			
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				vertical-align: center;
+				flex-wrap: wrap;
+				align-content: center;
+				font-family: 'Open Sans', sans-serif;
+				background: linear-gradient(top, #222, #333);
+			}
+			
+			.main-content{
+				width: 200px;
+			    background-color: aquamarine;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    margin: 10px;
+			}
+			
+			[class$='container'] {
+				background-color: #fad85e;
+				width: 120px;
+				height: 120px;
+				object-fit: contain;
+				box-shadow: inset 0 5px #e7f2a9, inset 0 -5px #fae9ae, inset 5px 0 #f8edc6, inset -5px 0 #fae9ae;
+				border-radius: 10%;
+			}
+			
+			.item {
+				display: block;
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				margin: 4px;
+				background-color: #d7f246;
+				box-shadow: inset 0 3px #a2935d, inset 0 -3px #998332;
+			}
+			.code{
+				    background-color: #b2f4f4;
+				    width: 100%;
+				    height: 70px;
+				    color: #0a1612;
+			}
+			/**第一个盒子**/
+			.first-container {
+				display: flex;
+			}
+			/**第二个盒子**/
+			.second-container {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+			}
+			/**第三个盒子**/
+			.third-container {
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+			}
+			/**第四个盒子**/
+			.fourth-container {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			/**第五个盒子**/
+			.fifth-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			/**第六个盒子**/
+			.sixth-container {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			/**第七个盒子**/
+			.seventh-container {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-end;
+			}
+			/**第八个盒子**/
+			.eighth-container {
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+			}
+			/**第九个盒子**/
+			.ninth-container {
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--第一个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+			</div>
+			<div class="first-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第二个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: center;<br>
+				align-items: flex-start;</div>
+			<div class="second-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第三个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: flex-end;<br>
+				align-items: flex-start;</div>
+			<div class="third-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第四个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: flex-start;<br>
+				align-items: center;</div>
+			<div class="fourth-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第五个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: center;<br>
+				align-items: center;</div>
+			<div class="fifth-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第六个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: flex-end;<br>
+				align-items: center;
+			</div>
+			<div class="sixth-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第七个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: flex-start;<br>
+				align-items: flex-end;
+			</div>
+			<div class="seventh-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第八个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: center;<br>
+				align-items: flex-end;
+			</div>
+			<div class="eighth-container">
+				<span class="item"></span>
+			</div>
+		</div>
+		<!--第九个盒子-->
+		<div class="main-content">
+			<div class="code">
+				display: flex;<br>
+				justify-content: flex-end;<br>
+				align-items: flex-end;
+			</div>
+			<div class="ninth-container">
+				<span class="item"></span>
+			</div>
+		</div>
+	</body>
+
+</html>
