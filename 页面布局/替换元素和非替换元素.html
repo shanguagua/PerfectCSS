@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.des {
+				height: 30px;
+				margin-bottom: 40px;
+				margin-top: 40px;
+			}
+			
+			div.wrapper {
+				margin: 0 auto;
+				background-color: #9deaf1;
+				width: 400px;
+			}
+			
+			div span {
+				padding: 30px;
+				margin: 30px;
+				border: 2px solid green;
+				background-color: #5dc2f6;
+			}
+			
+			input {
+				padding: 50px
+				margin: 6px;
+				border: 2px solid green;
+				background-color: #5dc2f6;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="des">非替换元素:不会撑开父元素,</div>
+		<div class="wrapper">
+			<span>sdf</span>
+		</div>
+		<div class="des">替换元素:不会撑开父元素！</div>
+		<div class="wrapper">
+			<input type="text" value="山呱呱" />
+		</div>
+	</body>
+
+</html>
