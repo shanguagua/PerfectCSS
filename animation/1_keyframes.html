@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>keyframes</title>
+		<style type="text/css">
+			.myAnimation {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				border: 1px solid royalblue;
+				/*动画定义*/
+				animation-name: change_color;
+				animation-duration: 5s;
+				animation-timing-function: ease;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+				animation-play-state: running;
+				animation-fill-mode: none;
+			}
+			/*定义keyframes*/
+			
+			@-webkit-keyframes change_color {
+				0% {
+					background-color: blue;
+				}
+				30% {
+					background-color: green;
+				}
+				60% {
+					background-color: yellow;
+				}
+				100% {
+					background-color: goldenrod;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="myAnimation"></div>
+	</body>
+
+</html>

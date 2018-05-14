@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>keyframes</title>
+
+	</head>
+<style type="text/css">
+	.myAnimation {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 1px solid royalblue;
+		font-size: 24px;
+		text-align: center;
+		line-height: 100px;
+		position: relative;
+		/*动画定义*/
+		animation-name: move;
+		animation-duration: 2s;
+		animation-timing-function: ease;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+	/*定义keyframes*/
+	
+	@-webkit-keyframes move {
+		0% {
+			left: 0px;
+		}
+		30% {
+			left: 60px;
+			animation-timing-function: ease-in;
+		}
+		60%{
+			left: 90px;
+			animation-timing-function: linear;
+		}
+		80%{
+			left: 120px;
+			animation-timing-function: step-start;
+		}
+		100%{
+			left: 160px;
+			animation-timing-function: step-end;
+		}
+	}
+</style>
+<body>
+	<button id="paused">暂停</button>
+	<button id="running">运行</button>
+	<div id="animation" class="myAnimation">山呱呱</div>
+</body>
+<script type="text/javascript">
+	var animation = document.getElementById('animation')
+	paused.onclick = function(){
+		animation.style.animationPlayState = "paused";
+	}
+	running.onclick = function(){
+		animation.style.animationPlayState = "running";
+	}
+</script>
+</html>

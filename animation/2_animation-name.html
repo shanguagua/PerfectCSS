@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>keyframes</title>
+
+	</head>
+<style type="text/css">
+	.myAnimation {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		border: 1px solid royalblue;
+		font-size: 24px;
+		text-align: center;
+		line-height: 200px;
+		/*动画定义*/
+		animation-name: change_color1,change_color2;
+		animation-duration: 5s;
+		animation-timing-function: ease;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-play-state: running;
+		animation-fill-mode: none;
+	}
+	/*定义keyframes*/
+	
+	@-webkit-keyframes change_color1 {
+		0% {
+			background-color: blue;
+		}
+		30% {
+			background-color: green;
+		}
+		60% {
+			background-color: yellow;
+		}
+		100% {
+			background-color: goldenrod;
+		}
+	}
+	@-webkit-keyframes change_color2 {
+		0% {
+			background-color: red;
+		}
+		30% {
+			background-color: cornflowerblue;
+			font-size: 30px;
+		}
+		70% {
+			background-color: whitesmoke;
+			font-size: 25px;
+		}
+		100% {
+			background-color: darksalmon;
+		}
+	}
+</style>
+<body>
+	<div class="myAnimation">山呱呱</div>
+</body>
+
+</html>
